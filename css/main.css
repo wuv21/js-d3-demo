@@ -1,0 +1,13 @@
+.container {
+    margin-bottom: 3em;
+}
+
+.jumbotron .container {
+    margin-bottom: 0;
+}
+
+.axis line,
+.axis path {
+  fill: none;
+  stroke: #aeaeae;
+}

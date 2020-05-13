@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap CDNs -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- our custom styling sheet -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!-- custom script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.js"></script>
+    <script src="js/script.js"></script>
+    <title>Code review D3 test!</title>
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Code review practice</h1>
+            <p>2020.05.13</p>
+
+            <p>Client-side web dev intro</p>
+            <ul>
+                <li>Relationship between HTML/CSS and JS</li>
+                <li>Where D3 fits in</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Part 1 -->
+    <div class="container">
+        <div class="row">
+            <h3>How do HTML/CSS and JS work together?</h3>
+        </div>
+
+        <div class="row">
+            <p
+                class="alert alert-danger"
+                id="alertP"
+                style="display:none">Error...nothing to remove</p>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3">
+                <button
+                    type="button"
+                    class="btn btn-sm btn-primary"
+                    id="secOneBtn"
+                >Add new elements</button>
+
+                <button
+                    type="button"
+                    class="btn btn-sm btn-danger"
+                    id="secOneBtnDelete"
+                >Delete last added</button>
+            </div>
+
+            <div class="col-xs-9">
+                <ul id="newListCounter"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Part 2 -->
+    <div class="container">
+        <div class="row">
+            <h3>How does D3 fit in?</h3>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3">
+                <button
+                    type="button"
+                    class="btn btn-sm btn-primary"
+                    id="addPointsBtn"
+                >Add more points</button>
+
+                <button
+                    type="button"
+                    class="btn btn-sm btn-danger"
+                    id="removeLastBtn"
+                >Remove last point</button>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div id="graph"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <h3>What else can you do with D3?</h3>
+        </div>
+        <div class="row">
+            <br/>
+
+            <ul>
+                <li><a href="https://wuv21.github.io/pi-viz/">pi-viz</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
